@@ -1,0 +1,804 @@
+
+@-webkit-keyframes pageoutup{from{transform: translateY(0); -webkit-transform: translateY(0); }to{transform: translateY(-100%);  -webkit-transform: translateY(-100%); }}
+@keyframes pageoutup{from{transform: translateY(0); -webkit-transform: translateY(0); }to{transform: translateY(-100%); -webkit-transform: translateY(-100%); }}
+@-webkit-keyframes pageoutdown{from{transform: translateY(0); -webkit-transform: translateY(0); }to{transform: translateY(100%);  -webkit-transform: translateY(100%); }}
+@keyframes pageoutdown{from{transform: translateY(0); -webkit-transform: translateY(0); }to{transform: translateY(100%); -webkit-transform: translateY(100%); }}
+@-webkit-keyframes pageinup{from{transform: translateY(100%); -webkit-transform: translateY(100%); }to{transform: translateY(0);  -webkit-transform: translateY(0); }}
+@keyframes pageinup{from{transform: translateY(-100%); -webkit-transform: translateY(-100%); } to{transform: translateY(0);  -webkit-transform: translateY(0); }}
+@-webkit-keyframes pageindown{from{transform: translateY(100%); -webkit-transform: translateY(100%); }to{transform: translateY(0);  -webkit-transform: translateY(0); }}
+@keyframes pageindown{from{transform: translateY(100%); -webkit-transform: translateY(100%); }to{transform: translateY(0);  -webkit-transform: translateY(0); }}
+.activepage{top: 0;}
+.pageoutup{-webkit-animation:pageoutup .4s ease both;animation:pageoutup .4s ease both;}
+.pageoutdown{-webkit-animation:pageoutdown .4s ease both;animation:pageoutdown .4s ease both;}
+.pageinup{-webkit-animation:pageinup .4s ease both;animation:pageinup .4s ease both;}
+.pageindown{-webkit-animation:pageindown .4s ease both;animation:pageindown .4s ease both;}
+@-webkit-keyframes chW{0%{width: 0;opacity: 0;}1%{opacity: 1;} 100%{width: 100%;}}
+@keyframes chW{0%{width: 0;opacity: 0;}1%{opacity: 1;} 100%{width: 100%;}}
+@-webkit-keyframes chH{0%{height: 0;opacity: 0;}1%{opacity: 1;}100%{height: 100%;}}
+@keyframes chH{0%{height: 0;opacity: 0;}1%{opacity: 1;} 100%{height: 100%;}}
+@-webkit-keyframes chWH{0%{width: 0;height: 0;opacity: 0;}1%{opacity: 1;}50%{width: 100%;height: 0;}100%{width: 100%;height: 100%;}}
+@keyframes chWH{0%{width: 0;height: 0;opacity: 0;}1%{opacity: 1;}50%{width: 100%;height: 0;}100%{width: 100%;height: 100%;}}
+@-webkit-keyframes chHW{0%{width: 0;height: 0;opacity: 0;}1%{opacity: 1;}50%{width: 0;height: 100%;}100%{width: 100%;height: 100%;}}
+@keyframes chHW{0%{width: 0;height: 0;opacity: 0;}1%{opacity: 1;}50%{width: 0;height: 100%;}100%{width: 100%;height: 100%;}}
+@-webkit-keyframes shan{0%{opacity: 0;}100%{opacity: 1;}}
+@keyframes shan{0%{opacity: 0;}100%{opacity: 1;}}
+@-webkit-keyframes p2cell1{from{opacity: 0; transform: translateY(-100%);-webkit-transform:translateY(-100%);}to{opacity: 1; transform: translateY(0);-webkit-transform:translateY(0);}}
+@keyframes p2cell1{from{opacity: 0; transform: translateY(-100%);-webkit-transform:translateY(-100%);}to{opacity: 1; transform: translateY(0);-webkit-transform:translateY(0);}}
+@-webkit-keyframes p2cell2{from{opacity: 0; transform: translateY(75%) translateX(-75%);-webkit-transform:translateY(75) translateX(-75%);}to{opacity: 1; transform: translateY(0) translateX(0);-webkit-transform:translateY(0) translateX(0);}}
+@keyframes p2cell2{from{opacity: 0; transform: translateY(75%) translateX(-75%);-webkit-transform:translateY(75) translateX(-75%);}to{opacity: 1; transform: translateY(0) translateX(0);-webkit-transform:translateY(0) translateX(0);}}
+@-webkit-keyframes p2cell4{from{opacity: 0; transform: translateY(75%) translateX(75%);-webkit-transform:translateY(75) translateX(75%);}to{opacity: 1; transform: translateY(0) translateX(0);-webkit-transform:translateY(0) translateX(0);}}
+@keyframes p2cell4{from{opacity: 0; transform: translateY(75%) translateX(75%);-webkit-transform:translateY(75) translateX(75%);}to{opacity: 1; transform: translateY(0) translateX(0);-webkit-transform:translateY(0) translateX(0);}}
+@-webkit-keyframes p2cell3{from{opacity: 0;}to{opacity: 1;}}
+@keyframes p2cell3{from{opacity: 0; }to{opacity: 1;}}
+@-webkit-keyframes bingIn{from{opacity: 0; transform:rotateZ(30deg) scale3d(.7,.7,.7);-webkit-transform:rotateZ(30deg) scale3d(.7,.7,.7);}to{opacity: 1; transform:rotateZ(0) scale3d(1,1,1);-webkit-transform:rotateZ(0) scale3d(1,1,1);}}
+@keyframes bingIn{from{opacity: 0; transform:rotateZ(30deg) scale3d(.7,.7,.7);-webkit-transform:rotateZ(30deg) scale3d(.7,.7,.7);}to{opacity: 1; transform:rotateZ(0) scale3d(1,1,1);-webkit-transform:rotateZ(0) scale3d(1,1,1);}}
+@-webkit-keyframes bingIn2{from{opacity: 0; transform:rotateZ(-30deg) scale3d(.7,.7,.7);-webkit-transform:rotateZ(-30deg) scale3d(.7,.7,.7);}to{opacity: 1; transform:rotateZ(0) scale3d(1,1,1);-webkit-transform:rotateZ(0) scale3d(1,1,1);}}
+@keyframes bingIn2{from{opacity: 0; transform:rotateZ(-30deg) scale3d(.7,.7,.7);-webkit-transform:rotateZ(-30deg) scale3d(.7,.7,.7);}to{opacity: 1; transform:rotateZ(0) scale3d(1,1,1);-webkit-transform:rotateZ(0) scale3d(1,1,1);}}
+@-webkit-keyframes fadeIO{0%,100%{opacity: 0;}50%{opacity: .3;}25%,75%{opacity: 1;}}
+@keyframes fadeIO{0%,100%{opacity: 0;}50%{opacity: .3;}25%,75%{opacity: 1;}}
+@-webkit-keyframes bigIn{0%{opacity: 0; transform:scale3d(4,4,4);-webkit-transform:scale3d(4,4,4);}30%{opacity: .7;}100%{opacity: 1; transform:scale3d(1,1,1);-webkit-transform:scale3d(1,1,1);}}
+@keyframes bigIn{0%{opacity: 0; transform:scale3d(4,4,4);-webkit-transform:scale3d(4,4,4);} 30%{opacity: .7;}100%{opacity: 1; transform:scale3d(1,1,1);-webkit-transform:scale3d(1,1,1);}}
+@-webkit-keyframes bigIn2{0%{opacity: 0; transform:scale3d(1.4,1.4,1.4);-webkit-transform:scale3d(1.4,1.4,1.4);}100%{opacity: 1; transform:scale3d(1,1,1);-webkit-transform:scale3d(1,1,1);}}
+@keyframes bigIn2{0%{opacity: 0; transform:scale3d(1.4,1.4,1.4);-webkit-transform:scale3d(1.4,1.4,1.4);}100%{opacity: 1; transform:scale3d(1,1,1);-webkit-transform:scale3d(1,1,1);}}
+.initAni .changeWid{overflow: hidden;-webkit-animation: chW .8s 1s linear both;animation: chW .8s 1s linear both;}
+.initAni .shan{overflow: hidden;-webkit-animation: shan .4s .6s linear both;animation: shan .4s .6s linear both;}
+.initAni .p1-k1{-webkit-animation: fadeInUp .8s .6s cubic-bezier(.08,.33,.33,.9) both;animation: fadeInUp .8s .6s cubic-bezier(.08,.33,.33,.9) both;}
+.initAni .p1-word h1{-webkit-animation: fadeInUp .8s 1s cubic-bezier(.08,.33,.33,.9) both;animation: fadeInUp .8s 1s cubic-bezier(.08,.33,.33,.9) both;}
+.initAni .p1-word h2{-webkit-animation: fadeInUp .8s 1.2s cubic-bezier(.08,.33,.33,.9) both;animation: fadeInUp .8s 1.2s cubic-bezier(.08,.33,.33,.9) both;}
+.initAni .p1-word h3{-webkit-animation: fadeInUp .6s 1.4s cubic-bezier(.08,.33,.33,.9) both;animation: fadeInUp .8s 1.4s cubic-bezier(.08,.33,.33,.9) both;}
+.initAni .title b{-webkit-animation: fadeIn .4s .5s ease both;animation: fadeIn .4s .5s ease both;}
+.initAni .title span{-webkit-animation: fadeInDown .4s .8s ease both;animation: fadeInDown .4s .8s ease both;}
+@-webkit-keyframes shan3{0%,100%{opacity: 1;}50%{opacity: .8;}}
+@keyframes shan3{0%,100%{opacity: 1;} 50%{opacity: .8;}}
+.initAni .pagebg{-webkit-animation: fadeIn 1s .4s ease both;animation: fadeIn 1s .4s ease both;}
+.initAni .p1-bx1 span,.initAni .p1-bx2 span,.initAni .p1-bx3 span,.initAni .p1-bx4 span{-webkit-animation: chW .3s .4s linear both;animation: chW .3s .4s linear both;}
+.initAni .p2-cell1{-webkit-animation: p2cell1 .3s 1.2s ease both;animation: p2cell1 .3s 1.2s ease both;}
+.initAni .p2-cell2{-webkit-animation: p2cell2 .3s 1.2s ease both;animation: p2cell2 .3s 1.2s ease both;}
+.initAni .p2-cell4{-webkit-animation: p2cell4 .3s 1.2s ease both;animation: p2cell4 .3s 1.2s ease both;}
+.initAni .p2-cell3{-webkit-animation: bigIn .5s 1.5s ease-out both;animation: bigIn .5s 1.5s ease-out both;}
+.initAni .p2-cell3 i{-webkit-animation: fio 1.2s 2.6s ease-in-out infinite;animation: fio 1.2s 2.6s ease-in-out infinite;}
+@-webkit-keyframes fio{0%,100%{opacity: 1;}50%{opacity: .8;}}
+@keyframes fio{0%,100%{opacity: 1;}50%{opacity: .8;}}
+.initAni .p1-line1{-webkit-animation: chW .4s 2.1s linear both;animation: chW .4s 2.1s linear both;}
+.initAni .bgline1{-webkit-animation: chW .32s 1.7s linear both;animation: chW .32s 1.7s linear both;}
+.initAni .bgline2{-webkit-animation: chW .3s 1.64s linear both;animation: chW  .3s 1.64s linear both;}
+.initAni .bgline3{-webkit-animation: chW .3s 1.78s linear both;animation: chW .3s 1.78s linear both;}
+.initAni .bgline4{-webkit-animation: chW .32s 1.72s linear both;animation: chW .32s 1.72s linear both;}
+.initAni .bgline5{-webkit-animation: chW .31s 1.76s linear both;animation: chW .31s 1.76s linear both;}
+.initAni .bgline6{-webkit-animation: chW .3s 1.76s linear both;animation: chW .3s 1.76s linear both;}
+.initAni .bgline7{-webkit-animation: chW .3s 1.7s linear both;animation: chW .3s 1.7s linear both;}
+.initAni .bgline8{-webkit-animation: chW .32s 1.7s linear both;animation: chW .32s 1.7s linear both;}
+.initAni .p2-bounceIn{-webkit-animation: fadeIn .8s 2.1s both;animation: fadeIn .8s 2.1s both;}
+.initAni .p3-c1,.initAni .p3-c3,.initAni .p3-c5{-webkit-animation: fadeInRight .5s both;animation: fadeInRight .5s both; }
+.initAni .p3-c2,
+.initAni .p3-c4
+{
+   -webkit-animation:fadeInLeft .5s both;
+    animation: fadeInLeft .5s both;
+}
+.initAni .p3-c1{
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.initAni .p3-c2{
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+.initAni .p3-c3{
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+.initAni .p3-c4{
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.initAni .p3-c5{
+    -webkit-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+@-webkit-keyframes ki1{
+    from{opacity: 0; transform:translateX(-70%) translateY(-50%);-webkit-transform:translateX(-70%) translateY(-50%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes ki1{
+    from{opacity: 0; transform:translateX(-70%) translateY(-50%);-webkit-transform:translateX(-70%) translateY(-50%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@-webkit-keyframes kr1{
+    from{opacity: 0; transform:translateX(70%) translateY(-50%);-webkit-transform:translateX(70%) translateY(-50%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes kr1{
+    from{opacity: 0; transform:translateX(70%) translateY(-50%);-webkit-transform:translateX(70%) translateY(-50%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+
+@-webkit-keyframes ki2{
+    from{opacity: 0; transform:translateX(-30%) translateY(0);-webkit-transform:translateX(-30%) translateY(0);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes ki2{
+    from{opacity: 0; transform:translateX(-30%) translateY(0);-webkit-transform:translateX(-30%) translateY(0);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@-webkit-keyframes kr2{
+    from{opacity: 0; transform:translateX(30%) translateY(0);-webkit-transform:translateX(30%) translateY(0);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes kr2{
+    from{opacity: 0; transform:translateX(30%) translateY(0);-webkit-transform:translateX(30%) translateY(0);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+
+@-webkit-keyframes ki3{
+    from{opacity: 0; transform:translateX(-50%) translateY(40%);-webkit-transform:translateX(-50%) translateY(40%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes ki3{
+    from{opacity: 0; transform:translateX(-50%) translateY(40%);-webkit-transform:translateX(-50%) translateY(40%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@-webkit-keyframes kr3{
+    from{opacity: 0; transform:translateX(50%) translateY(40%);-webkit-transform:translateX(50%) translateY(40%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes kr3{
+    from{opacity: 0; transform:translateX(50%) translateY(40%);-webkit-transform:translateX(50%) translateY(40%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+
+@-webkit-keyframes ki4{
+    from{opacity: 0; transform:translateX(-100%) translateY(100%);-webkit-transform:translateX(-100%) translateY(100%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes ki4{
+    from{opacity: 0; transform:translateX(-100%) translateY(100%);-webkit-transform:translateX(-100%) translateY(100%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@-webkit-keyframes kr4{
+    from{opacity: 0; transform:translateX(-100%) translateY(100%);-webkit-transform:translateX(-100%) translateY(100%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes kr4{
+    from{opacity: 0; transform:translateX(100%) translateY(100%);-webkit-transform:translateX(100%) translateY(100%);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+
+
+.initAni .p3-c1 .ki1,
+.initAni .p3-c3 .ki1,
+.initAni .p3-c5 .ki1,
+.initAni .posit-left .ki1{ 
+    -webkit-animation: ki1 .6s ease both;
+    animation: ki1 .6s ease both;
+}
+.initAni .p3-c1 .ki2,
+.initAni .p3-c3 .ki2,
+.initAni .p3-c5 .ki2,
+.initAni .posit-left .ki2{ 
+    -webkit-animation: ki2 .6s ease both;
+    animation: ki2 .6s ease both;
+}
+.initAni .p3-c1 .ki3,
+.initAni .p3-c3 .ki3,
+.initAni .p3-c5 .ki3,
+.initAni .posit-left .ki3{ 
+    -webkit-animation: ki3 .6s ease both;
+    animation: ki3 .6s ease both;
+}
+.initAni .p3-c1 .ki4,
+.initAni .p3-c3 .ki4,
+.initAni .p3-c5 .ki4,
+.initAni .posit-left .ki4{ 
+    -webkit-animation: ki4 .6s ease both;
+    animation: ki4 .6s ease both;
+}
+
+
+.initAni .p3-c2 .ki1,
+.initAni .p3-c4 .ki1,
+.initAni .posit-right .ki1{ 
+    -webkit-animation: kr1 .6s ease both;
+    animation: kr1 .6s ease both;
+}
+
+.initAni .p3-c2 .ki2,
+.initAni .p3-c4 .ki2,
+.initAni .posit-right .ki2{ 
+    -webkit-animation: kr2 .6s ease both;
+    animation: kr2 .6s ease both;
+}
+
+.initAni .p3-c2 .ki3,
+.initAni .p3-c4 .ki3,
+.initAni .posit-right .ki3{ 
+    -webkit-animation: kr3 .6s ease both;
+    animation: kr3 .6s ease both;
+}
+
+.initAni .p3-c2 .ki4,
+.initAni .p3-c4 .ki4,
+.initAni .posit-right .ki4{ 
+    -webkit-animation: kr4 .6s ease both;
+    animation: kr4 .6s ease both;
+}
+.initAni .p3-c1 .ki1,
+.initAni .posit-left .ki1{-webkit-animation-delay: 1.8s;animation-delay: 1.8s;}
+.initAni .p3-c1 .ki2,
+.initAni .posit-left .ki2{-webkit-animation-delay: 1.9s;animation-delay: 1.9s;}
+.initAni .p3-c1 .ki3,
+.initAni .posit-left .ki3{-webkit-animation-delay: 2s;animation-delay: 2s;}
+.initAni .p3-c1 .ki4,
+.initAni .posit-left .ki4{-webkit-animation-delay: 2.1s;animation-delay: 2.1s;}
+
+
+.initAni .p3-c2 .ki1{-webkit-animation-delay: 1.9s;animation-delay: 1.9s;}
+.initAni .p3-c2 .ki2{-webkit-animation-delay: 2s;animation-delay: 2s;}
+.initAni .p3-c2 .ki3{-webkit-animation-delay: 2.1s;animation-delay: 2.1s;}
+.initAni .p3-c2 .ki4{-webkit-animation-delay: 2.2s;animation-delay: 2.2s;}
+
+.initAni .p3-c3 .ki1{-webkit-animation-delay: 2s;animation-delay: 2s;}
+.initAni .p3-c3 .ki2{-webkit-animation-delay: 2.1s;animation-delay: 2.1s;}
+.initAni .p3-c3 .ki3{-webkit-animation-delay: 2.2s;animation-delay: 2.2s;}
+.initAni .p3-c3 .ki4{-webkit-animation-delay: 2.3s;animation-delay: 2.3s;}
+
+.initAni .p3-c4 .ki1{-webkit-animation-delay: 2.1s;animation-delay: 2.1s;}
+.initAni .p3-c4 .ki2{-webkit-animation-delay: 2.2s;animation-delay: 2.2s;}
+.initAni .p3-c4 .ki3{-webkit-animation-delay: 2.3s;animation-delay: 2.3s;}
+.initAni .p3-c4 .ki4{-webkit-animation-delay: 2.4s;animation-delay: 2.4s;}
+
+.initAni .p3-c5 .ki1{-webkit-animation-delay: 2.2s;animation-delay: 2.2s;}
+.initAni .p3-c5 .ki2{-webkit-animation-delay:2.3s;animation-delay:2.3s;}
+.initAni .p3-c5 .ki3{-webkit-animation-delay: 2.4s;animation-delay: 2.4s;}
+.initAni .p3-c5 .ki4{-webkit-animation-delay: 2.5s;animation-delay: 2.5s;}
+
+.initAni .p3-c1 .kw,
+.initAni .p3-c2 .kw,
+.initAni .p3-c3 .kw,
+.initAni .p3-c4 .kw,
+.initAni .p3-c5 .kw,
+.initAni .posit-left .kw{
+    -webkit-animation: fadeIn .8s both;
+    animation: fadeIn .8s both;
+}
+
+.initAni .p3-c1 .kw,
+.initAni .posit-left .kw,
+.initAni .posit-right .kw{-webkit-animation-delay: 2.2s;animation-delay: 2.2s;}
+.initAni .p3-c2 .kw{-webkit-animation-delay:2.3s;animation-delay:2.3s;}
+.initAni .p3-c3 .kw{-webkit-animation-delay: 2.4s;animation-delay: 2.4s;}
+.initAni .p3-c4 .kw{-webkit-animation-delay: 2.5s;animation-delay: 2.5s;}
+.initAni .p3-c5 .kw{-webkit-animation-delay: 2.6s;animation-delay: 2.6s;}
+
+.initAni .bing1 img{
+    -webkit-animation:bingIn2 .4s ease both;
+    animation: bingIn2 .4s ease both;
+}
+.initAni .bing1 .bing1-1{
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -webkit-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+.initAni .bing1 .bing1-2{
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -webkit-animation-delay: 1.35s;
+    animation-delay: 1.35s;
+}
+.initAni .bing1 .bing1-3{
+    transform-origin: left bottom;
+    -webkit-transform-origin: left bottom;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.initAni .bing1 .bing1-4{
+    transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+    -webkit-animation-delay: 1.65s;
+    animation-delay: 1.65s;
+}
+.initAni .bing1 .bing1-5{
+    transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+
+
+.initAni .bing2 img{
+    -webkit-animation:bingIn .6s ease both;
+    animation: bingIn .6s ease both;
+}
+.initAni .bing2 .bing2-1{
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.initAni .bing2 .bing2-2{
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+    -webkit-animation-delay: 2.2s;
+    animation-delay: 2.2s;
+}
+
+.initAni .bing1-title{
+    -webkit-animation:fadeIn .6s 1.0s both;
+    animation: fadeIn .6s 1.0s both;
+    }
+.initAni .bing2-title{
+    -webkit-animation:fadeIn .6s 2.0s both;
+    animation:fadeIn .6s 2.0s both;
+    }
+
+.initAni .c1-linebox1 span{
+    -webkit-animation:chHW .3s 1.6s both;
+    animation: chHW .3s 1.6s both;
+}
+.initAni .c1-linebox1 b,
+.initAni .c1-linebox1 i{
+    -webkit-animation:fadeIn .3s 1.6s both;
+    animation: fadeIn .3s 1.6s both;
+}
+
+
+.initAni .ct1-1,
+.initAni .ct1-2,
+.initAni .ct1-3{
+    -webkit-animation:fadeInRight .8s 1.2s both;
+    animation: fadeInRight .8s 1.2s both;
+}
+.initAni .ct1-4,
+.initAni .ct1-5{
+    -webkit-animation:fadeInLeft .8s 1.2s both;
+    animation: fadeInLeft .8s 1.2s both;
+}
+
+
+
+.initAni .c1-linebox2 span{
+    -webkit-animation:chHW .3s 2.4s both;
+    animation: chHW .3s 2.4s both;
+}
+.initAni .ct2-1{
+    -webkit-animation:fadeInLeft .8s 2s both;
+    animation: fadeInLeft .8s 2s both;
+}
+.initAni .ct2-2{
+    -webkit-animation:fadeInRight .8s 2s both;
+    animation: fadeInRight .8s 2s both;
+}
+.initAni .c1-linebox2 b,
+.initAni .c1-linebox2 i{
+    -webkit-animation:fadeIn .3s 2.8s both;
+    animation: fadeIn .3s 2.8s both;
+}
+
+.initAni .desc1 p
+{
+    animation: chW .6s 1.8s linear both;
+    -webkit-animation: chW .6s 1.8s linear both;
+}
+.initAni .desc1 i
+{
+    animation: shan .6s 1.6s linear both;
+    -webkit-animation: shan .6s 1.6s linear both;
+}
+.initAni .desc2 p{
+    animation: chW .6s 2.6 linear both;
+    -webkit-animation: chW .6s 2.6s linear both;
+}
+.initAni .desc2 i{
+    animation: shan .6s 2.4s linear both;
+    -webkit-animation: shan .6s 2.4s linear both;
+}
+
+.initAni .p5-zt h1{
+    animation: fadeInDown 1s 2.6s both;
+    -webkit-animation: fadeInDown 1s 2.6s both;
+}
+.initAni .p5-ztbox {
+    animation:  pulse 1s 2.8s both;
+    -webkit-animation: zoomIn 1s 2.8s both;
+}
+.initAni .p5-ztbox p{
+    animation: chH 1s 3.4s both;
+    -webkit-animation: chH 1s 3.4s both;
+}
+.initAni .posit-left{
+    animation: fadeInRight .6s 1.2s both;
+    -webkit-animation: fadeInRight .6s 1.2s both;
+}
+.initAni .posit-right{
+    animation: fadeInLeft .6s 1.2s both;
+    -webkit-animation: fadeInLeft .6s 1.2s both;
+}
+
+
+@-webkit-keyframes fadeInLT{
+    from{opacity: 0; transform:translateX(-7rem) translateY(-7rem);-webkit-transform:translateX(-7rem) translateY(-7rem);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@keyframes fadeInLT{
+    from{opacity: 0; transform:translateX(-7rem) translateY(-7rem);-webkit-transform:translateX(-7rem) translateY(-7rem);}
+    to{opacity: 1; transform:translateX(0) translateY(0);-webkit-transform:translateX(0) translateY(0);}
+}
+@-webkit-keyframes bigIN{
+    from{opacity: 0; transform:scale3d(5,5,5);-webkit-transform:scale3d(5,5,5);}
+    to{opacity: 1; transform:scale3d(1,1,1);-webkit-transform:scale3d(1,1,1);}
+}
+@keyframes bigIN{
+    from{opacity: 0; transform:scale3d(5,5,5);-webkit-transform:scale3d(5,5,5);}
+    to{opacity: 1; transform:scale3d(1,1,1);-webkit-transform:scale3d(1,1,1);}
+}
+
+.initAni .p6-ct1-1{   animation: fadeInLT .3s 1.4s linear both;-webkit-animation: fadeInLT .3s 1.4s linear both;}
+.initAni .p6-ct1-2{   animation: fadeInLT .4s 1.28s linear both;-webkit-animation: fadeInLT .4s 1.28s linear both;}
+.initAni .p6-ct1-3{   animation: fadeInLT .35s 1.24s linear both;-webkit-animation: fadeInLT .35s 1.24s linear both;}
+.initAni .p6-ct1-4{   animation: fadeInLT .28s 1.3s linear both;-webkit-animation: fadeInLT .28s 1.3s linear both;}
+.initAni .p6-ct1-5{   animation: fadeInLT .39s 1.2s linear both;-webkit-animation: fadeInLT .39s 1.2s linear both;}
+.initAni .p6-ct1-6{   animation: fadeInLT .28s 1.25s linear both;-webkit-animation: fadeInLT .28s 1.25s linear both;}
+.initAni .p6-ct1-7{   animation: fadeInLT .3s 1.4s linear both;-webkit-animation: fadeInLT .3s 1.4s linear both;}
+.initAni .p6-ct1-8{   animation: fadeInLT .35s 1.2s linear both;-webkit-animation: fadeInLT .35s 1.2s linear both;}
+
+
+.initAni .p6-ct1-4 img{animation:  fadeInLeft .2s 1.7s linear both;-webkit-animation:  fadeInLeft .2s 1.7s linear both;}
+.initAni .p6-ct1-3 img{animation:  fadeInRight .2s 2s linear both;-webkit-animation:  fadeInRight .2s 2s linear both;}
+.initAni .p6-ct1-5 img{animation:  fadeInRight .2s 2s linear both;-webkit-animation:  fadeInRight .2s 2s linear both;}
+.initAni .p6-ct1-6 img{animation:  fadeInLeft .2s 2s linear both;-webkit-animation:  fadeInLeft .2s 2s linear both;}
+
+
+.initAni .p6-ct2-1{   animation: fadeInLT .27s 2.2s linear both;-webkit-animation: fadeInLT .27s 2.2s linear both;}
+.initAni .p6-ct2-2{   animation: fadeInLT .3s 2.22s linear both;-webkit-animation: fadeInLT .3s 2.22s linear both;}
+.initAni .p6-ct2-3{   animation: fadeInLT .35s 2.3s linear both;-webkit-animation: fadeInLT .35s 2.3s linear both;}
+.initAni .p6-ct2-4{   animation: fadeInLT .35s 2.26s linear both;-webkit-animation: fadeInLT .35s 2.26s linear both;}
+.initAni .p6-ct2-5{   animation: fadeInLT .3s 2.35s linear both;-webkit-animation: fadeInLT .4s 2.35s linear both;}
+.initAni .p6-ct2-6{   animation: fadeInLT .25s 2.29s linear both;-webkit-animation: fadeInLT .25s 2.29s linear both;}
+.initAni .p6-ct2-7{   animation: fadeInLT .34s 2.24s linear both;-webkit-animation: fadeInLT .4s 2.24s linear both;}
+.initAni .p6-ct2-8{   animation: fadeInLT .28s 2.26s linear both;-webkit-animation: fadeInLT .28s 2.26s linear both;}
+
+
+.initAni .p6-ct2-4 img{animation:  fadeInLeft .2s 2.8s linear both;-webkit-animation:  fadeInLeft .2s 2.8s linear both;}
+.initAni .p6-ct2-3 img{animation:  fadeInRight .2s 3.1s linear both;-webkit-animation:  fadeInRight .2s 3.1s linear both;}
+.initAni .p6-ct2-5 img{animation:  fadeInRight .2s 3.1s linear both;-webkit-animation:  fadeInRight .2s 3.1s linear both;}
+.initAni .p6-ct2-6 img{animation:  fadeInLeft .2s 3.1s linear both;-webkit-animation:  fadeInLeft .2s 3.1s linear both;}
+
+@-webkit-keyframes p7-rot1{
+    0%{opacity: 0; transform:rotateZ(180deg) scale3d(1,1,1);-webkit-transform:rotateZ(180deg) scale3d(1,1,1);}
+    40%{opacity: .5;}
+    100%{opacity: .2; transform:rotateZ(90deg) scale3d(.8,.8,.8);-webkit-transform:rotateZ(90deg) scale3d(.8,.8,.8);}
+}
+@keyframes p7-rot1{
+    0%{opacity: 0; transform:rotateZ(180deg) scale3d(1,1,1);-webkit-transform:rotateZ(180deg) scale3d(1,1,1);}
+    40%{opacity: .5;}
+    100%{opacity: .2; transform:rotateZ(90deg) scale3d(.8,.8,.8);-webkit-transform:rotateZ(90deg) scale3d(.8,.8,.8);}
+}
+
+@-webkit-keyframes p7-rot2{
+    0%{opacity: 0; transform:rotateZ(120deg) scale3d(1,1,1);-webkit-transform:rotateZ(120deg) scale3d(1,1,1);}
+    40%{opacity: .5;}
+    100%{opacity: .4; transform:rotateZ(0) scale3d(.9,.9,.9);-webkit-transform:rotateZ(0) scale3d(.9,.9,.9);}
+}
+@keyframes p7-rot2{
+    0%{opacity: 0; transform:rotateZ(90deg) scale3d(1,1,1);-webkit-transform:rotateZ(90deg) scale3d(1,1,1);}
+    40%{opacity: .5;}
+    100%{opacity: .4; transform:rotateZ(0) scale3d(.9,.9,.9);-webkit-transform:rotateZ(0) scale3d(.9,.9,.9);}
+}
+
+@-webkit-keyframes p7-rot3{
+    0%{opacity: 0; transform:rotateZ(90deg) scale3d(1,1,1);-webkit-transform:rotateZ(90deg) scale3d(1,1,1);}
+    100%{opacity:.9; transform:rotateZ(-20deg) scale3d(1,1,1);-webkit-transform:rotateZ(-20deg) scale3d(1,1,1);}
+}
+@keyframes p7-rot3{
+    0%{opacity: 0; transform:rotateZ(90deg) scale3d(1,1,1);-webkit-transform:rotateZ(90deg) scale3d(1,1,1);}
+    100%{opacity:.9; transform:rotateZ(-20deg) scale3d(1,1,1);-webkit-transform:rotateZ(-20deg) scale3d(1,1,1);}
+}
+.initAni .iptw .ipi-1,
+.initAni .iptw .ipi-2,
+.initAni .iptw .ipi-3{
+    -webkit-transform-origin: center 40%;
+    transform-origin: center 40%;
+}
+
+
+.initAni .iptw{animation:  fadeInDown .3s 2s ease both;-webkit-animation:  fadeInDown .3s 2s ease both;}
+.initAni .pi-linkline i{animation:  chH .3s 2.3s linear both;-webkit-animation:  chH .3s 2.3s linear both;}
+.initAni .ipcell1 div,.initAni .ipcell2 div,.initAni .ipcell3 div{animation:  chH .3s 2.6s linear both;-webkit-animation:  chH .3s 2.6s linear both;}
+.initAni .ipcell1 img,.initAni .ipcell2 img,.initAni .ipcell3 img{animation:  fadeInDown .3s 3s linear both;-webkit-animation:  fadeInDown .3s 3s linear both;}
+.ipi-1{transform: rotateZ(-90deg) scale3d(.8,.8,.8);-webkit-transform: rotateZ(-90deg) scale3d(.8,.8,.8);opacity: .2;}
+.ipi-2{transform: rotateZ(0);-webkit-transform: rotateZ(0);opacity: .5;}
+.ipi-3{transform: rotateZ(-20deg);-webkit-transform: rotateZ(-20deg);}
+.initAni .p7-word1 h1{
+    animation:  fadeIn .8s 1.6s ease both;-webkit-animation:  fadeIn .8s 1.6s ease both;
+}
+.initAni .p7-word1 h2{
+    animation:  fadeIn .8s 1.8s ease both;-webkit-animation:  fadeIn .8s 1.8s ease both;
+}
+
+.initAni .p7-word2 h1 img{
+    animation:  fadeIn .6s 3.2s ease both;-webkit-animation:  fadeIn .6s 3.2s ease both;
+}
+.initAni .p7-word2 h1 span{
+    animation: chW 1s 3.4s ease both;-webkit-animation: chW 1s 3.4s ease both;
+}
+.initAni .p7-word2 h2 img{
+    animation:  fadeIn .6s 3.8s ease both;-webkit-animation:  fadeIn .6s 3.8s ease both;
+}
+.initAni .p7-word2 h2 span{
+    animation:  chW 1s 4.0s ease both;-webkit-animation:  chW 1s 4.0s ease both;
+}
+
+.initAni .p8-wordbox1{
+    animation:  fadeIn .6s 1.6s ease both;-webkit-animation: fadeIn .6s 1.6s ease both;  
+}
+.initAni .p8-wordbox1 img,
+.initAni .p8-wordbox1 span {
+    animation:  fadeIn .6s ease both;-webkit-animation: fadeIn .6s ease both;  
+}
+
+.initAni .p8-wordbox1 .wb1 img{
+    animation-delay: 2s ;-webkit-animation-delay: 2s ; 
+}
+.initAni .p8-wordbox1 .wb2 img{
+    animation-delay: 2.2s ;-webkit-animation-delay: 2.2s ; 
+}
+.initAni .p8-wordbox1 .wb3 img{
+    animation-delay: 2.4s ;-webkit-animation-delay: 2.4s ; 
+}
+.initAni .p8-wordbox1 .wb4 img{
+    animation-delay: 2.6s ;-webkit-animation-delay: 2.6s ; 
+}
+.initAni .p8-wordbox1 .wb1 span{
+    animation-delay: 2.3s ;-webkit-animation-delay: 2.3s ; 
+}
+.initAni .p8-wordbox1 .wb2 span{
+    animation-delay: 2.5s ;-webkit-animation-delay: 2.5s ; 
+}
+.initAni .p8-wordbox1 .wb3 span{
+    animation-delay: 2.7s ;-webkit-animation-delay: 2.7s ; 
+}
+.initAni .p8-wordbox1 .wb4 span{
+    animation-delay: 2.9s ;-webkit-animation-delay: 2.9s ; 
+}
+.initAni .p8-wordbox2 {
+    animation:  fadeInUp .8s 3.4s ease both;-webkit-animation:  fadeInUp .8s 3.4s ease both;
+}
+.initAni .p8-wb3-1 {
+    animation:  fadeInUp .8s 3.6s ease both;-webkit-animation:  fadeInUp .8s 3.6s ease both;
+}
+.initAni .p8-wb3-2 {
+    animation:  fadeInUp .8s 3.8s ease both;-webkit-animation:  fadeInUp .8s 3.8s ease both;
+}
+
+.initAni .p8-addeff img:nth-of-type(1){  
+    animation:  fadeIn .6s 1.6s ease both;-webkit-animation:  fadeIn .6s 1.6s ease both;
+    }
+.initAni .p8-addeff img:nth-of-type(2){  
+    animation:  fadeIn .6s 3.2s ease both;-webkit-animation:  fadeIn .6s 3.2s ease both;
+    }
+.initAni .p8-addeff img:nth-of-type(3){  
+    animation:  fadeIn .6s 3.4s ease both;-webkit-animation:  fadeIn .6s 3.4s ease both;
+    }
+@-webkit-keyframes scaleAng{
+	from{ transform: scale3d(.7,0,0);-webkit-transform: scale3d(.7,0,0); }
+	to{transform: scale3d(1,1,1);-webkit-transform: scale3d(1,1,1);}
+}
+@keyframes scaleAng{
+    from{ transform: scale3d(.7,0,0);-webkit-transform: scale3d(.7,0,0); }
+    to{transform: scale3d(1,1,1);-webkit-transform: scale3d(1,1,1);}
+}
+.p9-jzt i{transform-origin: center bottom;-webkit-transform-origin: center bottom;}
+.initAni .p9-cw1{animation:fadeInLeft .2s 1.2s linear both;-webkit-animation:fadeInLeft .2s 1.2s linear both;}
+.initAni .p9-cw2{animation:fadeInRight .2s 1.2s linear both;-webkit-animation:fadeInRight .2s 1.2s linear both;}
+
+.initAni .ang1box{animation:chH .6s 1.6s linear both;-webkit-animation:chH .6s 1.6s linear both;}
+.initAni .ang2box{animation:chH 1.2s 1.6s linear both;-webkit-animation:chH 1.2s 1.6s linear both;}
+.initAni .p9-jzt img{animation:fadeInUp .5s 1.6s linear both;-webkit-animation:fadeInUp .5s 1.6s linear both;}
+.initAni .p9-line1 i,.initAni .p9-line2 i{animation:chHW .4s 2s linear both;-webkit-animation:chHW .4s 2s linear both;}
+.initAni .p9-line1 b,.initAni .p9-line2 b{animation:fadeIn .4s 2s linear both;-webkit-animation:fadeIn .4s 2s linear both;}
+.initAni .p9-jzt span{animation:fadeIn .4s 2.4s linear both;-webkit-animation:fadeIn .4s 2.4s linear both;}
+.initAni .p9-count2 p{animation:fadeInUp .8s 3s linear both;-webkit-animation:fadeInUp .8s 3s linear both;}
+.initAni .p9-count2 p:nth-of-type(1){animation-delay: 2.4s ;-webkit-animation-delay: 2.4s ; }
+.initAni .p9-count2 p:nth-of-type(2){animation-delay: 2.6s ;-webkit-animation-delay: 2.6s ; }
+.initAni .p9-count2 p:nth-of-type(3){animation-delay: 2.8s ;-webkit-animation-delay: 2.8s ; }
+/*page10*/
+
+.initAni .p10-wordbox p{
+    animation: fadeInUp 1s ease-out both;-webkit-animation: fadeInUp 1s ease-out both;
+}
+.initAni .p10-wordbox p:nth-of-type(1){
+    animation-delay: 2.4s;-webkit-animation-delay: 2.4s;
+}
+.initAni .p10-wordbox p:nth-of-type(2){
+    animation-delay: 2.6s;-webkit-animation-delay: 2.6s;
+}
+.initAni .p10-wordbox p:nth-of-type(3){
+    animation-delay: 2.8s;-webkit-animation-delay: 2.8s;
+}
+.initAni .p10-wordbox span:nth-of-type(1){
+    animation: fadeIn 1s 2s ease-out both;-webkit-animation: fadeIn 1s 2s ease-out both;
+    }
+.initAni .p10-wordbox span:nth-of-type(2){
+    animation: fadeIn 1s 2.2s ease-out both;-webkit-animation: fadeIn 1s 2.2s ease-out both;
+    }
+.initAni .p10-wordbox span:nth-of-type(3){
+    animation: fadeIn 1s 2.4s ease-out both;-webkit-animation: fadeIn 1s 2.4s ease-out both;
+    }
+
+.initAni .p11-wordbox{animation:  fadeIn .6s 1.6s ease both;-webkit-animation: fadeIn .6s 1.6s ease both;}
+.initAni .p11-wordbox h1 img{animation:  fadeIn .6s 2s ease both;-webkit-animation: fadeIn .6s 2s ease both;}
+.initAni .p11-wordbox span{animation:  fadeIn .6s 2.2s ease both;-webkit-animation: fadeIn .6s 2.2s ease both;}
+.initAni .p11-imgbox img:nth-of-type(1) {animation:  fadeInUp .8s 2.4s ease both;-webkit-animation: fadeInUp .8s 2.4s ease both;}
+.initAni .p11-imgbox img:nth-of-type(2) {animation:  fadeInUp .6s 2.6s ease both;-webkit-animation: fadeInUp .6s 2.6s ease both;}
+
+.initAni .p12-wordbox{animation:  fadeIn .6s 1.6s ease both;-webkit-animation: fadeIn .6s 1.6s ease both;  }
+
+.initAni .p12-wordbox h2{
+    animation:  fadeInUp 1s 2.0s ease both;-webkit-animation: fadeInUp 1s 2.0s ease both;
+}
+.initAni .p12-wordbox h1{
+    animation:  fadeInUp 1s 2.2s ease both;-webkit-animation: fadeInUp 1s 2.2s ease both;
+}
+.initAni .p12-img1{
+    animation:  fadeInUp 1s 2.6s ease both;-webkit-animation: fadeInUp 1s 2.6s ease both;
+}
+.initAni .p12-addeff img:nth-of-type(1){
+    animation:  fadeIn .6s 2s ease both;-webkit-animation: fadeIn .6s 2s ease both;
+} 
+.initAni .p12-addeff img:nth-of-type(2),
+.initAni .p12-addeff img:nth-of-type(3){
+    animation:  fadeIn .6s 2.6s ease both;-webkit-animation: fadeIn .6s 2.6s ease both;
+}
+@-webkit-keyframes scaleeff{
+    0%{ opacity: 0; transform: scale3d(0,0,0);-webkit-transform: scale3d(0,0,0); }
+    20%{opacity: 1;}
+    100%{transform: scale3d(1,1,1);-webkit-transform: scale3d(1,1,1);}
+}
+@keyframes scaleeff{
+    0%{ opacity: 0; transform: scale3d(0,0,0);-webkit-transform: scale3d(0,0,0); }
+    20%{opacity: 1;}
+    100%{transform: scale3d(1,1,1);-webkit-transform: scale3d(1,1,1);}
+}
+@-webkit-keyframes scaleeff{
+    0%{ opacity: 0; transform: scale3d(0,0,0) rotateZ(10deg);-webkit-transform: scale3d(0,0,0) rotateZ(10deg); }
+    20%{opacity: 1;}
+    100%{transform: scale3d(1.3,1.3,1.3) rotateZ(0);-webkit-transform: scale3d(1.3,1.3,1.3) rotateZ(0);}
+}
+@keyframes scaleeff{
+    0%{ opacity: 0; transform: scale3d(0,0,0) rotateZ(30deg);-webkit-transform: scale3d(0,0,0) rotateZ(30deg); }
+    20%{opacity: 1;}
+    100%{transform: scale3d(1.3,1.3,1.3) rotateZ(0);-webkit-transform: scale3d(1.3,1.3,1.3) rotateZ(0);}
+}
+@-webkit-keyframes p13-cell1{
+    0%{ height: 0;  transform: scale3d(0,0,0) translateY(.5rem) ;-webkit-transform: scale3d(0,0,0) translateY(.5rem);}
+    100%{height: 2.66rem; transform: scale3d(1,1,1) translateY(0) ;-webkit-transform: scale3d(1,1,1) translateY(0);}
+}
+@keyframes p13-cell1{
+    0%{ height: 0;  transform: scale3d(0,0,0) translateY(.5rem) ;-webkit-transform: scale3d(0,0,0) translateY(.5rem);}
+    100%{height: 2.66rem; transform: scale3d(1,1,1) translateY(0) ;-webkit-transform: scale3d(1,1,1) translateY(0);}
+}
+@-webkit-keyframes p13-cell2{
+    0%{ height: 0;   transform: scale3d(0,0,0) translateY(-.5rem) ;-webkit-transform: scale3d(0,0,0) translateY(-.5rem) ;}
+    100%{height: 3.17rem;transform: scale3d(1,1,1) translateY(0) ;-webkit-transform: scale3d(1,1,1) translateY(0) ;}
+}
+@keyframes p13-cell2{
+    0%{ height: 0; transform: scale3d(0,0,0) translateY(-.5rem) ;-webkit-transform: scale3d(0,0,0) translateY(-.5rem) ;}
+    100%{height: 3.17rem;transform: scale3d(1,1,1) translateY(0) ;-webkit-transform: scale3d(1,1,1) translateY(0) ;}
+}
+
+.initAni .kuai1{
+    animation: bounceInLeft .6s 1s both;-webkit-animation: bounceInLeft .6s 1s both;
+    animation: bounceInLeft .6s 1s both;-webkit-animation: bounceInLeft .6s 1s both;
+}
+.initAni .kuai2{
+    animation: bounceInRight .6s 1s ease both;-webkit-animation: bounceInRight .6s 1s ease both;
+}
+.initAni .word{
+    animation: bounceIn .4s 1.4s ease both;-webkit-animation: bounceIn .4s 1.4s ease both;
+}
+.initAni .eff{
+    animation: scaleeff .4s 1.4s ease-out both;-webkit-animation: scaleeff .4s 1.4s ease-out both;
+}
+.initAni .p13-count1 .ys{
+    transform-origin: center bottom;-webkit-transform-origin: center bottom;
+    animation: p13-cell1 .4s 1.4s ease-out both;-webkit-animation: p13-cell1 .4s 1.4s ease-out both;
+}
+.initAni .p13-count2 .ys{
+    transform-origin: center top;-webkit-transform-origin: center top;
+    animation: p13-cell2 .4s 1.4s ease-out both;-webkit-animation: p13-cell2 .4s 1.4s ease-out both;
+}
+.initAni .p13-cells img{
+    transform-origin: center;-webkit-transform-origin: center;
+    animation: fadeIn .6s 2s both;-webkit-animation: fadeIn .6s 2s both;
+    }
+
+@-webkit-keyframes chW2{
+    0%{width: 0;height:0; opacity: 0;}
+    1%{opacity: 1;}
+    50%{width: 50%;height:0;} 
+    100%{width: 50%;height:100%;}
+}
+@keyframes chW2{
+    0%{width: 0;height:0; opacity: 0;}
+    1%{opacity: 1;}
+    50%{width: 50%;height:0;} 
+    100%{width: 50%;height:100%;}
+}
+@-webkit-keyframes rotateyuan{from{transform: rotateZ(-10deg);-webkit-transform: rotateZ(-10deg);}to{transform: rotateZ(45deg);-webkit-transform: rotateZ(45deg);}}
+@keyframes rotateyuan{from{transform: rotateZ(-10deg);-webkit-transform: rotateZ(-10deg);}to{transform: rotateZ(45deg);-webkit-transform: rotateZ(45deg);}} 
+@-webkit-keyframes rotateR{ from{transform: rotateZ(0);-webkit-transform: rotateZ(0);}to{transform: rotateZ(360deg);-webkit-transform: rotateZ(360deg);}}
+@keyframes rotateR{from{transform: rotateZ(0);-webkit-transform: rotateZ(0);}to{transform: rotateZ(360deg);-webkit-transform: rotateZ(360deg);}} }
+@-webkit-keyframes rotateL{from{transform: rotateZ(0);-webkit-transform: rotateZ(0);}to{transform: rotateZ(-360deg);-webkit-transform: rotateZ(-360deg);}}
+@keyframes rotateL{from{transform: rotateZ(0);-webkit-transform: rotateZ(0);}to{transform: rotateZ(-360deg);-webkit-transform: rotateZ(-360deg);}}
+
+@-webkit-keyframes chH4{
+    0%{height: 0;width: 0; opacity: 0;}
+    1%{opacity: 1;}
+    100%{height: 100%;width: 0;}}
+
+@keyframes chH4{
+    0%{height: 0;width: 0; opacity: 0;}
+    1%{opacity: 1;}
+    100%{height: 100%;width: 0;}}
+}
+
+
+.initAni .p14-line3 .pt1{
+    animation: chW .3s 2.4s ease-out both;-webkit-animation: chW .3s 2.4s ease-out both;
+}
+.initAni .p14-line4 .pt1{
+    animation: chW2 .6s 2.4s linear both;-webkit-animation: chW2 .6s 2.4s linear both;
+}
+
+.initAni .p14-line5 .pt2{
+    animation: chHW .8s 2.4s ease-out both;-webkit-animation: chHW .8s 2.4s ease-out both;
+}
+.initAni .p14-line6 .pt2{
+    animation: chHW .8s 2.4s linear both;-webkit-animation: chHW .8s 2.4s linear both;
+}
+.initAni .p14-line1 .pt4{
+    animation: chHW .8s 2.4s linear both;-webkit-animation: chHW .8s 2.4s linear both;
+}
+.initAni .p14-line2 .pt4{
+    animation: chHW .8s 2.4s linear both;-webkit-animation: chHW .8s 2.4s linear both;
+}
+.initAni .p14-line7 .pt3,
+.initAni .p14-line8 .pt3{
+    animation: chWH .8s 2.4s linear both;-webkit-animation: chWH .8s 2.4s linear both;
+}
+
+.initAni .p14-line3 .pt1{
+    animation: chWH .6s 2.4s ease-out both;-webkit-animation: chWH .6s 2.4s ease-out both;
+}
+.initAni .p14-line4 .pt5{
+    animation: chWH .6s 2.4s ease-out both;-webkit-animation: chWH .6s 2.4s ease-out both;
+}
+
+
+
+.initAni .p14-line3 .pt3,
+.initAni .p14-line4 .pt3{ animation: chW .3s 3.1s ease-out both;-webkit-animation: chW .3s 3.1s ease-out both;}
+ 
+.initAni .p14-ct{animation: fadeInUp .6s 1.2s  ease-out both;-webkit-animation: fadeInUp .6s 1.2s ease-out both;}
+
+.initAni .chilun-3{animation: rotateR 8s 2s ease-out linear;-webkit-animation: rotateR 8s 2s linear infinite;}
+.initAni .chilun-2{animation: rotateL 8s 2s linear infinite;-webkit-animation: rotateL 8s 2s linear infinite;}
+.initAni .chilun-1{animation: rotateL 8s 2s linear infinite;-webkit-animation: rotateL 8s 2s linear infinite;}
+
+
+.initAni .yuanbox img{ animation: rotateyuan .6s 1.8s ease-out both;-webkit-animation: rotateyuan .6s 1.8s ease-out both;}
+.initAni .main-tit-1{animation: fadeInDown .6s 1.8s  ease-out both;-webkit-animation: fadeInDown .6s 1.8s ease-out both;}
+.initAni .main-tit-2{animation: fadeInUp .6s 1.8s  ease-out both;-webkit-animation: fadeInUp .6s 1.8s ease-out both;}
+.initAni .title-box{animation: fadeIn .6s 1.8s  ease-out both;-webkit-animation: fadeIn .6s 1.8s ease-out both;}
+
+.initAni .chilunbox{animation: fadeIn 1s 3.2s  ease-out both;-webkit-animation: fadeIn 1s 3.2s ease-out both;}
+
+.initAni .p15-logo{animation: fadeInUp 1s .6s  ease-out both;-webkit-animation: fadeInUp 1s .6s ease-out both;}
+.initAni .p15-count img{animation: fadeIn .6s 1.4s  ease both;-webkit-animation: fadeIn .6s 1.4s ease both;} 
+.initAni .p15-count h1{ animation: fadeInUp 1s 1.4s  ease both;-webkit-animation: fadeInUp 1s 1.4s ease both;} 
+.initAni .p15-count h2{animation: fadeInUp 1s 1.8s  ease both;-webkit-animation: fadeInUp 1s 1.8s ease both;}
+    
+.initAni .p15-count a{animation: fadeInUp 1s 2.2s  ease both;-webkit-animation: fadeInUp 1s 2.2s ease both; }
+.initAni .danwei {animation: fadeInUp .6s 2.7s ease both;-webkit-animation: fadeInUp .6s 2.7s ease both;}
